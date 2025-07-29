@@ -1,27 +1,21 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+bool isPrimeNative(int n){
 
-bool isPrime(int n) {
+     for(int i = 2;i<=sqrt(n);i++){
+        if(n%i==0){
+           return false;
+        }
+     }
 
-    if (n <= 1) return false;
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0)
-            return false;
-    }
-    return true;
-    
+     return true;
 }
 
-int main() {
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;cin>>n;
+    cout<<isPrimeNative(n)<<endl;
 
-    if (isPrime(n)) {
-        cout << n << " is a Prime number." << endl;
-    } else {
-        cout << n << " is NOT a Prime number." << endl;
-    }
-
-    return 0;
+ return 0;
 }
