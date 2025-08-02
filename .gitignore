@@ -1,27 +1,54 @@
-# C++ object files and binaries
+# Compiled Object files
 *.o
-*.out
-*.exe
+*.obj
 
-# Build files
-*.log
-*.a
+# Compiled Dynamic libraries
 *.so
+*.dylib
 *.dll
 
-# MacOS system files
-.DS_Store
+# Compiled Static libraries
+*.lib
+*.a
 
-# VS Code settings (optional, if you're sharing repo)
+# Executable files
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+
+# Debug and build files
+*.log
+*.dSYM/
+*.stackdump
+*.map
+*.pch
+*.pdb
+
+# CMake build folders
+build/
+cmake-build-*/
+
+# Qt build folders
+*.pro.user
+*.pro.user.*
+moc_*
+qrc_*
+ui_*
+
+# VSCode
 .vscode/
+
+# CLion
+.idea/
 
 # Backup files
 *~
+*.bak
 *.swp
+*.swo
+*.tmp
 
-# Compiled files from Makefiles
-Makefile
-cmake-build-*/
-
-# Cache directories
+# Cache files
 .cache/
